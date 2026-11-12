@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        /* THIS IS THE DOUBLE PART - BESIDE EACH OTHER */
+        .double-container {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .box {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        /* Second box different small */
+        .box2 {
+            background-color: #fff8e6;
+            border-top: 5px solid #ff9900;
+        }
+        .box1 {
+            border-top: 5px solid #003366;
+        }
+        h2 {
+            color: #003366;
+        }
+        .box2 h2 {
+            color: #cc6600;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .box2 button {
+            background-color: #ff9900;
+        }
+        .info {
+            margin-top: 20px;
+            background-color: #eef2f7;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+        }
+        /* For phone - make dem stack */
+        @media (max-width: 700px) {
+            .double-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Our Contact us website</h1>
+        <a href="index.html"><i class="fa-regular fa-house"></i>Home</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i>About</a>
+        <a href="services.html"><i class="fa-solid fa-server"></i>Services</a>
+        <a href="form.html"><i class="fa-solid fa-file"></i>Our form</a>
+    </div>
+
+    <!-- DOUBLE CONTAINER START -->
+    <div class="double-container">
+
+        <!-- BOX 1 - YOUR ORIGINAL CONTACT US -->
+        <div class="box box1">
+            <h2>Contact Us</h2>
+            <p>If you have any question, fill the form below and we will get back to you.</p>
+
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your full name" required>
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Phone Number:</label>
+                <input type="tel" placeholder="Enter your phone number">
+
+                <label>Message:</label>
+                <textarea placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="info">
+                <h3>Our Contact Details</h3>
+                <p><b>Address:</b> Ibadan, Nigeria</p>
+                <p><b>Phone:</b> +234 81482 83621</p>
+                <p><b>Email:</b> Example116@gmail.com</p>
+                <p><b>Working Hours:</b> Monday - Friday, 9am - 5pm</p>
+            </div>
+        </div>
+
+        <!-- BOX 2 - DIFFERENT ONE, NOT SAME -->
+        <div class="box box2">
+            <h2>Request A Service / Feedback</h2>
+            <p>Want us to work for you? Or you want to rate us? Fill this second form.</p>
+
+            <form>
+                <label>Your Name / Company Name:</label>
+                <input type="text" placeholder="Enter company or your name" required>
+
+                <label>What Service Do You Need?</label>
+                <select required>
+                    <option value="">-- Select Service --</option>
+                    <option>Website Design</option>
+                    <option>Graphics Design</option>
+                    <option>Computer Training</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Your Budget:</label>
+                <input type="text" placeholder="e.g. ₦50,000">
+
+                <label>How Did You Hear About Us?</label>
+                <select>
+                    <option>Friend</option>
+                    <option>Instagram</option>
+                    <option>Google</option>
+                    <option>School</option>
+                </select>
+
+                <label>Your Feedback / Details:</label>
+                <textarea placeholder="Tell us what you need..."></textarea>
+
+                <button type="submit">Send Request</button>
+            </form>
+
+            <div class="info">
+                <h3>Why Choose ValueMax Hub?</h3>
+                <p>✔ Fast Response Within 24 Hours</p>
+                <p>✔ Affordable For Students</p>
+                <p>✔ Located in Ibadan, Nigeria</p>
+                <p><b>Office:</b> Open Mon - Sat, 9am - 6pm</p>
+            </div>
+        </div>
+
+    </div>
+    <!-- DOUBLE CONTAINER END -->
+
+    <div class="footer">
+        <p>&copy; 2026 ValueMax Hub {Saint}.</p>
+    </div>
+
+</body>
+</html>
