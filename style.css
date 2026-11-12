@@ -1,0 +1,76 @@
+/* style.css for Intellectual Tutorial - Match VALUEMAX Logo */
+
+body{
+    background-color:darkblue;
+    color: lightblue;
+    font-family: pristina;
+}
+
+h1{
+    color: rgb(120, 194, 219);
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+li{
+    list-style: none;
+}
+
+li{                  
+    list-style: none;ul
+}                      
+                       
+
+ul a:visited{
+    color:lightblue;
+}   
+
+ul a:hover{
+    background:deepskyblue;
+    color: lightblue;
+}
+
+ul a:active{
+    text-decoration: none;
+    background:lightblue;
+    color: #2A6BC9;
+}
+
+p{
+    background: rgba(69, 148, 239, 0.85);
+    color: #233233;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+pre{
+    background-color:lightblue;
+    color: black;
+    padding: 10px;
+}
+
+marquee{
+    color: lightblue;
+    font: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3{
+    color: lightblue;
+    text-align: center;
+}
+
+hr{
+    border: 1px solid yellow;
+}
